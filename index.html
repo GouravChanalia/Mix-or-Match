@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" async></script>
+  <title>Mix-Or-Match</title>
+</head>
+<body>
+  <nav>
+    <img src="./PB_LOGO.svg" alt="patient bond" width="150px" height="100px">
+    <section>
+        <small>Download our app</small>
+        <img src="./appstore_LOGO.png" alt="App Store" width="130px" height="40px">
+        <img src="./playstore_LOGO.png" alt="Play Store" width="130px" height="40px">
+    </section>
+  </nav>
+  <h1 class="page-title">Mix-Or-Match</h1>
+  <div class="overlay-text visible">
+    Click to Start
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">50</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Hearts.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Jack Spades.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Joker card.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_King of Dianìmonds.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_playing card.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_playing card2.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Queen of Diamonds.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Spade.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Hearts.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Joker card.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_King of Dianìmonds.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_playing card.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_playing card2.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Queen of Diamonds.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Spade.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <div class="circle-1">
+          <div class="circle-2"></div>
+        </div>
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/noun_Jack Spades.png">
+      </div>
+    </div>
+  </div>
+  <footer>
+    Copyright @ 2021 PatientBond Inc. All rights reserved
+  </footer>
+</body>
+</html>
